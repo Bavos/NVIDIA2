@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Render Remotion video
-        run: npx remotion render src/index.ts video-ai-tech out/video-ai-tech-sem-som.mp4
+        run: npm run build
 
       - name: Upload rendered video
         uses: actions/upload-artifact@v4
